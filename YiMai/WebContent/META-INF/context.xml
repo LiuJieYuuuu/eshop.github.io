@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+<Resource                                                        
+        name="jdbc/OracleDataSource"                           
+        factory="com.alibaba.druid.pool.DruidDataSourceFactory"
+        auth="Container"                                       
+        type="javax.sql.DataSource"                            
+        driverClassName="oracle.jdbc.driver.OracleDriver"         
+        url="jdbc:oracle:thin:@localhost:1521:orcl"        
+        username="ljy"                                   
+        password="123456"                                   
+        maxActive="50"                                     
+        maxWait="10000"                                    
+        removeabandoned="true"                             
+        removeabandonedtimeout="60"                        
+        logabandoned="false"                               
+        filters="stat"/>
+
+
+
+<Environment name="tjndi" value="hello JNDI" type="java.lang.String" />
+
+</Context>
